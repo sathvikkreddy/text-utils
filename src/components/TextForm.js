@@ -10,9 +10,9 @@ export default function TextForm(props) {
   const themeMode = props.theme.mode;
 
   const countWords = (text) => {
-    let words = text.split(" ");
-    words = words.filter((element) => {
-      return !/^ *$/.test(element);
+    let words = text.split(/\s+/);
+    words = words.filter((word) => {
+      return !/^ *$/.test(word);
     });
     const count = words.length;
     return count;

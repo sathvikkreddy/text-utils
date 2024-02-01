@@ -115,7 +115,7 @@ function App() {
                 />
               }
             />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About theme={theme} />} />
           </Routes>
         </div>
       </Router>
